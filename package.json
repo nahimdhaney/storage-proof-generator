@@ -1,6 +1,6 @@
 {
-  "name": "@openintents/storage-proof-generator",
-  "version": "1.0.0",
+  "name": "openintents-storage-proof-generator",
+  "version": "1.0.1",
   "description": "Generate Ethereum storage proofs for cross-chain verification",
   "type": "module",
   "exports": {
@@ -64,8 +64,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/openintentsframework/storage-proof-generator"
+    "url": "git+https://github.com/nahimdhaney/storage-proof-generator.git"
   },
+  "bugs": {
+    "url": "https://github.com/nahimdhaney/storage-proof-generator/issues"
+  },
+  "homepage": "https://github.com/nahimdhaney/storage-proof-generator#readme",
   "engines": {
     "node": ">=18.0.0"
   }

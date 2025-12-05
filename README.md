@@ -1,15 +1,15 @@
-# @openintents/storage-proof-generator
+# openintents-storage-proof-generator
 
 Generate Ethereum storage proofs for cross-chain verification. Works in Node.js and browser environments.
 
 ## Installation
 
 ```bash
-npm install @openintents/storage-proof-generator
+npm install openintents-storage-proof-generator
 # or
-yarn add @openintents/storage-proof-generator
+yarn add openintents-storage-proof-generator
 # or
-pnpm add @openintents/storage-proof-generator
+pnpm add openintents-storage-proof-generator
 ```
 
 ## Usage
@@ -17,7 +17,7 @@ pnpm add @openintents/storage-proof-generator
 ### As a Library (Browser & Node.js)
 
 ```typescript
-import { generateStorageProof } from '@openintents/storage-proof-generator';
+import { generateStorageProof } from 'openintents-storage-proof-generator';
 
 const proof = await generateStorageProof({
   rpc: 'https://rpc.example.com',
@@ -45,7 +45,7 @@ console.log(proof);
 For generating multiple proofs against the same RPC:
 
 ```typescript
-import { createProofGenerator } from '@openintents/storage-proof-generator';
+import { createProofGenerator } from 'openintents-storage-proof-generator';
 
 const generator = createProofGenerator('https://rpc.example.com');
 
@@ -65,7 +65,7 @@ const proof2 = await generator.generate({
 ### Node.js File Utilities
 
 ```typescript
-import { generateAndSaveProof, loadProof } from '@openintents/storage-proof-generator/node';
+import { generateAndSaveProof, loadProof } from 'openintents-storage-proof-generator/node';
 
 // Generate and save to file
 await generateAndSaveProof(
@@ -86,7 +86,7 @@ const proof = loadProof('./proof.json');
 
 ```bash
 # Install globally
-npm install -g @openintents/storage-proof-generator
+npm install -g openintents-storage-proof-generator
 
 # Generate proof
 storage-proof-generator \

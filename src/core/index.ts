@@ -1,5 +1,5 @@
 /**
- * @openintents/storage-proof-generator
+ * openintents-storage-proof-generator
  *
  * Generate Ethereum storage proofs for cross-chain verification.
  *

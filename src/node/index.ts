@@ -16,7 +16,7 @@ import { generateStorageProof, type ProofGeneratorOptions, type StorageProof } f
  *
  * @example
  * ```typescript
- * import { generateAndSaveProof } from '@openintents/storage-proof-generator/node';
+ * import { generateAndSaveProof } from 'openintents-storage-proof-generator/node';
  *
  * const proof = await generateAndSaveProof(
  *   {
@@ -53,7 +53,7 @@ export async function generateAndSaveProof(
  *
  * @example
  * ```typescript
- * import { loadProof } from '@openintents/storage-proof-generator/node';
+ * import { loadProof } from 'openintents-storage-proof-generator/node';
  *
  * const proof = loadProof('./proof.json');
  * console.log(proof.blockHash);
