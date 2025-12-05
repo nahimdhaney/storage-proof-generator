@@ -1,6 +1,6 @@
 {
   "name": "openintents-storage-proof-generator",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Generate Ethereum storage proofs for cross-chain verification",
   "type": "module",
   "exports": {
