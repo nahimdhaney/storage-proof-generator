@@ -1,0 +1,72 @@
+{
+  "name": "@openintents/storage-proof-generator",
+  "version": "1.0.0",
+  "description": "Generate Ethereum storage proofs for cross-chain verification",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/core/index.d.ts",
+      "import": "./dist/core/index.js",
+      "require": "./dist/core/index.cjs"
+    },
+    "./node": {
+      "types": "./dist/node/index.d.ts",
+      "import": "./dist/node/index.js",
+      "require": "./dist/node/index.cjs"
+    }
+  },
+  "main": "./dist/core/index.cjs",
+  "module": "./dist/core/index.js",
+  "types": "./dist/core/index.d.ts",
+  "bin": {
+    "storage-proof-generator": "./dist/node/cli.cjs"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsx src/node/cli.ts --help",
+    "test": "vitest",
+    "lint": "eslint src/",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "viem": "^2.38.6"
+  },
+  "devDependencies": {
+    "@types/node": "^20.19.24",
+    "tsup": "^8.5.0",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.3",
+    "vitest": "^2.0.0"
+  },
+  "peerDependencies": {
+    "viem": ">=2.0.0"
+  },
+  "peerDependenciesMeta": {
+    "viem": {
+      "optional": false
+    }
+  },
+  "keywords": [
+    "ethereum",
+    "storage-proof",
+    "merkle-proof",
+    "cross-chain",
+    "taiko",
+    "viem",
+    "rlp"
+  ],
+  "author": "OpenIntents",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/openintentsframework/storage-proof-generator"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
